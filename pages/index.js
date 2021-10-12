@@ -1,209 +1,183 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Image from 'next/image';
+import { TiTick } from 'react-icons/ti';
+import Accordion from '../components/Accordion';
+import Landing from '../components/Landing';
+import Layout from '../components/Layout';
+import MyGallery from '../components/MyGallery';
+import Price from '../components/Price';
+import { Services } from '../components/Services';
+import { Testimonials } from '../components/Testimonials';
+import Why from '../components/Why';
 
 export default function Home() {
   return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Layout>
+      <div style={{ height: 'auto', paddingBottom: '500px' }}>
+        <section>
+          <Landing style={{ height: 'auto' }}></Landing>
+        </section>
+        <section className="about container d-flex pt-5" id="etsy">
+          <div className=" w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
+            <div className="d-flex  flex-column justify-content-center">
+              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+                Hakkımızda
+              </h2>
+              <h2 style={{ fontSize: '1.25rem' }} className="text-center">
+                WOMDanışmanlık yurt içi ve yurt dışı e-ticaret pazaryeri çözümleri sunar.
+              </h2>
+            </div>
+            <div className="row">
+              <div className="col-md-6 col-sm-12">
+                <Image src="/images/neden.png" width={550} height={400} priority={true} />
+              </div>
+              <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-content-center">
+                <h2>Neden WOM Danışmanlık</h2>
+                <p>
+                  Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar
+                  ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve
+                  tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır.
+                  WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor,
+                  Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya
+                  eğitim ve danışmanlık hizmeti sunmuştur.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <section className="container mt-5 pt-5" id="dogru">
+          <div className="w-100 h-100 ">
+            <div className="row">
+              <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+                <Image src="/images/seo.png" height={100} width={100} priority={true} />
+                <p style={{ fontSize: '1.4rem' }}>DOĞRU SEO</p>
+                <p style={{ fontSize: '1.1rem' }}>
+                  Seo konusunda eğitim ve danışmanlık vermekteyiz.
+                </p>
+              </div>
+              <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+                <Image src="/images/reklam.png" height={100} width={100} priority={true} />
+                <p style={{ fontSize: '1.4rem' }}>DOĞRU REKLAM</p>
+                <p style={{ fontSize: '1.1rem' }}>
+                  Marketing ve remarketing için tüm e-ticaret pazaryerleri için ayrı ayrı eğitim ve
+                  danışmanlık sunmaktayız.{' '}
+                </p>
+              </div>
+              <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+                <Image src="/images/kar.png" height={100} width={100} priority={true} />
+                <p style={{ fontSize: '1.4rem' }}>KARLI SATIŞ</p>
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
+                <p style={{ fontSize: '1.1rem' }}>
+                  Doğru ürün doğru reklam ve doğru satış stratejileri ile karlı satış imkanları
+                  sunmaktayız.{' '}
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <section className="container mt-5 pt-5">
+          <div className="w-100 h-100 ">
+            <div className="row">
+              <div className="col-md-7 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+                <Image src="/images/etsy.png" height={500} width={450} priority={true} />
+              </div>
+              <div className="col-md-5 col-sm-12 text-start d-flex flex-column justify-content-start align-items-start">
+                <h3>ETSY Danışmanlık</h3>
 
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+                <p
+                  className="mt-5"
+                  style={{ fontSize: '1.3rem', fontWeight: '400', lineHeight: '1.7' }}>
+                  Yurt dışı satışı için gözünüzü korkutan bu süreçleri bizimle anında
+                  çözebilirsiniz.{' '}
+                </p>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+                <div
+                  className="etsy__list"
+                  className="d-flex flex-column justify-content-start align-items-start fs-5">
+                  <div>
+                    <TiTick style={{ color: 'green', marginRight: '10px' }} />
+                    Doğru ürün ve Pazar analizi
+                  </div>
+                  <div>
+                    <TiTick style={{ color: 'green', marginRight: '10px' }} />
+                    Yurt dışı kargo anlaşmaları
+                  </div>
+                  <div>
+                    <TiTick style={{ color: 'green', marginRight: '10px' }} />
+                    Gümrük işlemleri
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
+        <section className="container mt-5 pt-5" id="dogru">
+          <div className="w-100 h-100 ">
+            <div className="row">
+              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+                Galeri
+              </h2>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
-        </a>
-      </footer>
+              <div className="d-flex justify-content-center align-items-center ">
+                <MyGallery />
+              </div>
+            </div>
+          </div>
+        </section>
 
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+        <section className="container mt-5 pt-5" style={{ height: 'auto' }}>
+          <div className="w-100   ">
+            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              Hizmetlerimiz
+            </h2>
+            <Services />
+          </div>
+        </section>
+        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+          <div className="w-100 container">
+            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              Neden Biz ?
+            </h2>
+            <Why />
+          </div>
+        </section>
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+        <section className=" mt-5 pt-5" style={{ height: 'auto' }}>
+          <div className="w-100 container   ">
+            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              Müşteri Yorumları
+            </h2>
+            <Testimonials />
+          </div>
+        </section>
+        <section
+          className=" mt-5 pt-5"
+          style={{
+            height: 'auto',
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+            backgroundColor: '#F8F9FA',
+            paddingBottom: '100px'
+          }}>
+          <div className="w-100">
+            <Price />
 
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+            <div className="d-flex justify-content-center pt-5" style={{ width: '100%' }}>
+              <button className="btn btn-primary btn-lg rounded-pill w-50">Fiyat Al</button>
+            </div>
+          </div>
+        </section>
+        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+          <div className="w-100 container">
+            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              Sık Sorulan Sorular
+            </h2>
+            <Accordion />
+          </div>
+        </section>
+      </div>
+    </Layout>
+  );
 }
