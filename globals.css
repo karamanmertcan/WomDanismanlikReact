@@ -14,8 +14,10 @@
 }
 
 .slide__slick {
-  height: 800px;
+  height: 750px;
   width: 100%;
+  position: relative;
+  z-index: 1001;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,4 +25,22 @@
 
 .etsy__list {
   list-style: none;
+}
+
+.tsparticles-canvas-el {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+}
+
+#particles-js {
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  /*width: 100%;
+  height: 100vh;*/
+  background: #8000ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 import Logo from '../public/images/logo.png';
 import Image from 'next/image';
 import OffCanvas from './OffCanvas';
@@ -9,7 +10,6 @@ const Header = () => {
   const changeBg = () => {
     if (window.pageYOffset > 20) {
       setBg(true);
-      console.log(bg);
     } else {
       setBg(false);
     }
@@ -55,7 +55,9 @@ const Header = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Blog</a>
+                <Link href="/post">
+                  <a className="nav-link">Blog</a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a

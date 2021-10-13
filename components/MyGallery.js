@@ -1,5 +1,5 @@
 import React from 'react';
-import Gallery from 'react-grid-gallery';
+// import Gallery from 'react-grid-gallery';
 
 const IMAGES = [
   {
@@ -33,7 +33,8 @@ const IMAGES = [
 const MyGallery = () => {
   return (
     <>
-      <Gallery images={IMAGES} />;
+      {/* <Gallery images={IMAGES} />; */}
+      <h1>selam</h1>
     </>
   );
 };

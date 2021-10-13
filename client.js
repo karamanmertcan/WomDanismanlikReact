@@ -2,5 +2,6 @@ import sanityClient from '@sanity/client';
 
 export default sanityClient({
   projectId: 't4uhdv0f',
-  dataset: 'production'
+  dataset: 'production',
+  useCdn: true
 });

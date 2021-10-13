@@ -16,30 +16,11 @@ const serializers = {
   }
 };
 
-const query = `*[_type == "post" && slug.current == $slug] {
-    title,
-    slug,
-    mainImage{
-      asset->{
-        id,
-        url
-      },
-      alt
-    },
-    publishedAt,
-    excerpt,
-    body
-  }
-  `;
-const queryAll = `*[_type == "post" && slug.current != ''] {
-    'slug': slug.current
-  }`;
+const PostPage = (props) => {
+  console.log(props);
 
-const PostPage = ({ post }) => {
-  const imageProps = useNextSanityImage(sanityClient, post.image);
-
-  const { title, excerpt, mainImage, body, publishedAt } = post[0];
-  console.log(mainImage.asset.url);
+  const { title, excerpt, mainImage, body, publishedAt } = props;
+  console.log(title);
 
   return (
     <Layout>
@@ -51,41 +32,42 @@ const PostPage = ({ post }) => {
             </Link>
           </button>
           <h2>{title}</h2>
-          <Image
-            {...imageProps}
-            layout="responsive"
-            src={mainImage.asset.url}
-            height={100}
-            width={200}
-          />
+          <Image layout="responsive" src={mainImage.asset.url} height={100} width={200} />
           <div className="d-flex justify-content-between pt-2">
             <h4>Mertcan Karaman</h4>
             <h4>{publishedAt}</h4>
           </div>
           <div className=" mt-5 py-3" style={{ height: 'auto' }}>
-            <BlockContent blocks={body} serializers={serializers} />
+            <BlockContent
+              blocks={body.filter(({ _type }) => _type === 'block')}
+              serializers={serializers}
+            />
           </div>
         </div>
       </div>
     </Layout>
   );
 };
+const query = `*[_type == "post" && slug.current == $slug][0] {
+  title,
+  slug,
+  mainImage{
+    asset->{
+      id,
+      url
+    },
+    alt
+  },
+  publishedAt,
+  body,
+  excerpt,
+}
+`;
 
-export const getStaticProps = async (context) => {
-  const post = await sanityClient.fetch(query, { slug: context.params.slug });
-  return {
-    props: {
-      post
-    }
-  };
-};
-
-export const getStaticPaths = async () => {
-  const pages = (await sanityClient.fetch(queryAll)) || [];
-  const paths = pages.map((page) => ({
-    params: { slug: page.slug }
-  }));
-  return { paths, fallback: false };
+PostPage.getInitialProps = async function getInitialProps(context) {
+  // It's important to default the slug so that it doesn't return "undefined"
+  const { slug = '' } = context.query;
+  return await sanityClient.fetch(query, { slug });
 };
 
 export default PostPage;

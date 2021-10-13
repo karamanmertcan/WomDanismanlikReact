@@ -2,8 +2,6 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 export default function BlogCard({ title, publishedAt, mainImage, excerpt, slug }) {
-  console.log(slug);
-
   const router = useRouter();
 
   return (

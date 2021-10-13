@@ -47,7 +47,7 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" class="btn btn-primary btn-lg rounded-pill">
+                <button type="button" class="btn btn-primary btn-sm rounded-pill">
                   Daha Fazlası
                 </button>
               </div>
@@ -60,7 +60,7 @@ export const Services = () => {
               <Image src="/images/software-1.png" height={500} width={500} priority={true} />
             </div>
             <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg p-0">
-              <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1">
+              <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1  ">
                 03. Yazılım Hizmeti
               </h2>
               <div className=" text-lg-start ">
