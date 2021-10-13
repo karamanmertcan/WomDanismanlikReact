@@ -14,7 +14,7 @@ export default function DemoCarousel() {
     <Slider {...settings} className="slide__slick">
       <div className="p-5 text-center mt-5 d-flex flex-column justify-content-center align-items-center w-100 ">
         <h3 className="fw-bold fs-2 text-light">Dijital Pazarlama Çözümleri</h3>
-        <p className="mt-3  text-light w-50" style={{ fontSize: '1.4rem' }}>
+        <p className="mt-3  text-light w-50" style={{ fontSize: '1.2rem' }}>
           WOMDanışmanlık Dijital pazarlama sürecinde markalara müşterilerine ulaşmaları, ürün ve
           hizmetlerini tanıtmaları ve satmaları için verimli reklam ve pazarlama eğitimi ve
           danışmanlık hizmeti sunar.

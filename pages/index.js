@@ -2,20 +2,22 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { TiTick } from 'react-icons/ti';
 import Accordion from '../components/Accordion';
+import BlogCard from '../components/BlogCard';
 import Landing from '../components/Landing';
 import Layout from '../components/Layout';
 import MyGallery from '../components/MyGallery';
+import sanityClient from '../client.js';
 import Price from '../components/Price';
 import { Services } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import Why from '../components/Why';
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
-      <div style={{ height: 'auto', paddingBottom: '500px' }}>
-        <section>
-          <Landing style={{ height: 'auto' }}></Landing>
+      <div style={{ height: 'auto', paddingBottom: '100px' }} className="overflow-auto">
+        <section className="h-100 w-100 landing">
+          <Landing />
         </section>
         <section className="about container d-flex pt-5" id="etsy">
           <div className=" w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
@@ -145,7 +147,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className=" mt-5 pt-5" style={{ height: 'auto' }}>
+        <section className=" mt-5 py-5" style={{ height: 'auto' }}>
           <div className="w-100 container   ">
             <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
               Müşteri Yorumları
@@ -165,11 +167,11 @@ export default function Home() {
             <Price />
 
             <div className="d-flex justify-content-center pt-5" style={{ width: '100%' }}>
-              <button className="btn btn-primary btn-lg rounded-pill w-50">Fiyat Al</button>
+              <button className="btn btn-primary btn-lg rounded-pill w-50">Teklif Al</button>
             </div>
           </div>
         </section>
-        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#ffffff' }}>
           <div className="w-100 container">
             <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
               Sık Sorulan Sorular
@@ -177,7 +179,57 @@ export default function Home() {
             <Accordion />
           </div>
         </section>
+        <section className=" mt-5 py-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+          <div className="w-100 container">
+            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              Blog Yazıları
+            </h2>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+              {data.map((item, index) => {
+                const { title, publishedAt, mainImage, excerpt, slug } = item;
+                return (
+                  <BlogCard
+                    key={index}
+                    title={title}
+                    publishedAt={publishedAt}
+                    mainImage={mainImage}
+                    excerpt={excerpt}
+                    slug={slug}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        {/* <section className=" mt-5 py-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+          <BlockContent blocks={data[0].body} serializers={serializers} />
+        </section> */}
       </div>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const data = await sanityClient.fetch(
+    `*[_type == "post"]{
+    title,
+    slug,
+    mainImage{
+      asset->{
+        id,
+        url
+      },
+      alt
+    },
+    publishedAt,
+    excerpt,
+    body
+  }`
+  );
+  return {
+    props: {
+      data
+    },
+    revalidate: 1
+  };
 }

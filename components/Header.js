@@ -1,9 +1,7 @@
 import { useEffect, useState } from 'react';
 import Logo from '../public/images/logo.png';
 import Image from 'next/image';
-import Example from './OffCanvas';
-
-import { GiHamburgerMenu } from 'react-icons/gi';
+import OffCanvas from './OffCanvas';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
@@ -26,7 +24,7 @@ const Header = () => {
   return (
     <header>
       <nav
-        className={`navbar fixed-top navbar-expand-lg navbar-dark border-bottom ${
+        className={`navbar fixed-top navbar-expand-lg navbar-dark bg-dark border-bottom ${
           bg ? 'bg-dark' : null
         } scrolling-navbar`}>
         <div className="container">
@@ -36,10 +34,9 @@ const Header = () => {
           <a className="navbar-brand" href="/">
             <h3>Danışmanlık</h3>
           </a>
-          <GiHamburgerMenu
-            className="d-lg-none d-md-block"
-            style={{ color: 'white', cursor: 'pointer' }}
-          />
+          <div className="d-lg-none d-md-block">
+            <OffCanvas />
+          </div>
           <div className="collapse navbar-collapse " id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">

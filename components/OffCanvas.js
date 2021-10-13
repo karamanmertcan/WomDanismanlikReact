@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Button, Offcanvas } from 'react-bootstrap';
 
-function Example() {
+import { GiHamburgerMenu } from 'react-icons/gi';
+
+function OffCanvas() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -9,11 +11,11 @@ function Example() {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
+      <Button onClick={handleShow}>
+        <GiHamburgerMenu />
       </Button>
 
-      <Offcanvas show={show} onHide={handleClose}>
+      <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Offcanvas</Offcanvas.Title>
         </Offcanvas.Header>
@@ -26,4 +28,4 @@ function Example() {
   );
 }
 
-export default Example;
+export default OffCanvas;

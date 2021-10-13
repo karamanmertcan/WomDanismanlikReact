@@ -5,9 +5,7 @@ import DemoCarousel from './Carousel';
 const Landing = () => {
   return (
     <>
-      <section className="landing">
-        <DemoCarousel />
-      </section>
+      <DemoCarousel />
     </>
   );
 };

@@ -36,7 +36,7 @@ export const Testimonials = () => {
   };
   return (
     <div>
-      <Slider {...settings} className="slide__slick">
+      <Slider {...settings}>
         {comments.map((item) => (
           <div
             key={item.id}

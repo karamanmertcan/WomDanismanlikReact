@@ -8,7 +8,7 @@ const Price = () => {
         <div
           className={`col-md-4 col-sm-12 pt-5  d-flex  flex-column justify-content-start ${styles.my__card}  align-items-center shadow-lg`}
           style={{
-            color: '#808080',
+            color: 'black',
             backgroundColor: '#b2bec3',
             height: '600px'
           }}>
@@ -51,7 +51,7 @@ const Price = () => {
         <div
           className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
           style={{
-            color: '#808080',
+            color: 'black',
             backgroundColor: '#ecf0f1',
             height: '600px'
           }}>
@@ -86,7 +86,7 @@ const Price = () => {
         <div
           className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
           style={{
-            color: '#808080',
+            color: 'black',
             backgroundColor: '#ffffff',
             height: '600px'
           }}>
