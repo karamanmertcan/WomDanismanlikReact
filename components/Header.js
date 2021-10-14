@@ -40,60 +40,32 @@ const Header = () => {
           <div className="collapse navbar-collapse " id="navbarNav">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a className="nav-link " aria-current="page" href="/">
-                  Anasayfa
-                </a>
+                <Link href="/">
+                  <a className="nav-link " aria-current="page">
+                    Anasayfa
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/hakkimizda">
-                  Hakkkımızda
-                </a>
+                <Link href="/hakkimizda">
+                  <a className="nav-link">Hakkkımızda</a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Ekibimiz
-                </a>
+                <Link href="/ekibimiz">
+                  <a className="nav-link">Ekibimiz</a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link href="/post">
                   <a className="nav-link">Blog</a>
                 </Link>
               </li>
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Fiyatlar
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Action
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Another action
-                    </a>
-                  </li>
-                  <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a className="dropdown-item" href="#">
-                      Something else here
-                    </a>
-                  </li>
-                </ul>
-              </li>
+
               <li className="nav-item">
-                <a className="nav-link" href="/hakkimizda">
-                  İletişim
-                </a>
+                <Link href="/iletisim">
+                  <a className="nav-link">İletişim</a>
+                </Link>
               </li>
             </ul>
           </div>

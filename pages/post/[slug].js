@@ -26,7 +26,7 @@ const PostPage = (props) => {
     <Layout>
       <div style={{ marginTop: '100px' }}>
         <div className="container">
-          <button type="button" class="btn btn-primary">
+          <button type="button" className="btn btn-primary">
             <Link href="/post">
               <a style={{ color: 'white', textDecoration: 'none' }}>Geri Dön</a>
             </Link>

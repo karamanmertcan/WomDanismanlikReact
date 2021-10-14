@@ -47,7 +47,7 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" class="btn btn-primary btn-sm rounded-pill">
+                <button type="button" className="btn btn-primary btn-sm rounded-pill">
                   Daha Fazlası
                 </button>
               </div>

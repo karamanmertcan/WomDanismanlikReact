@@ -4,7 +4,9 @@ export default function DemoCarousel() {
   var settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    speed: 100,
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: false,
