@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import ModalImage from 'react-modal-image';
 import Image from 'next/image';
 import { TiTick } from 'react-icons/ti';
 import Accordion from '../components/Accordion';
@@ -23,6 +25,36 @@ export default function Home({ data }) {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
+  const images = [
+    {
+      id: 1,
+      image: 'https://cdn.pixabay.com/photo/2017/08/07/19/45/ecommerce-2607114_1280.jpg'
+    },
+    {
+      id: 2,
+      image: 'https://cdn.pixabay.com/photo/2018/07/11/11/14/ecommerce-3530785_1280.jpg'
+    },
+    {
+      id: 3,
+      image: 'https://cdn.pixabay.com/photo/2020/08/04/18/43/cyber-monday-5463567_1280.jpg'
+    },
+    {
+      id: 4,
+      image:
+        'https://images.pexels.com/photos/4968391/pexels-photo-4968391.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260'
+    },
+    {
+      id: 5,
+      image:
+        'https://images.pexels.com/photos/6214479/pexels-photo-6214479.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    },
+    {
+      id: 6,
+      image:
+        'https://images.pexels.com/photos/7621144/pexels-photo-7621144.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
+    }
+  ];
   return (
     <Layout>
       <div style={{ height: 'auto', paddingBottom: '100px' }} className="overflow-auto">
@@ -216,7 +248,13 @@ export default function Home({ data }) {
               </h2>
 
               <div className="d-flex justify-content-center align-items-center ">
-                <MyGallery />
+                <div className="row">
+                  {images.map((item) => (
+                    <div key={item.id} className="col-md-4 col-sm-12">
+                      <ModalImage small={item.image} large={item.image} alt="E-Ticaret" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -259,7 +297,9 @@ export default function Home({ data }) {
             <Price />
 
             <div className="d-flex justify-content-center pt-5" style={{ width: '100%' }}>
-              <button className="btn btn-primary btn-lg rounded-pill w-50">Teklif Al</button>
+              <Link href="/iletisim">
+                <button className="btn btn-primary btn-lg rounded-pill w-50">Teklif Al</button>
+              </Link>
             </div>
           </div>
         </section>
