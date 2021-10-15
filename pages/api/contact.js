@@ -16,7 +16,7 @@ export default function (req, res) {
     from: req.body.email,
     to: process.env.EMAIL,
     subject: `Konu ${req.body.subject}`,
-    text: `İsim : ${req.body.name}\n Email :<${req.body.email}>\n Konu :   ${req.body.subject} \n Mesaj : ${req.body.message}message}`
+    text: `İsim : ${req.body.name}\n Email :<${req.body.email}>\n Konu :   ${req.body.subject} \n Answer : ${req.body.answer} \n Mesaj : ${req.body.message}`
   };
 
   transporter.sendMail(mailData, function (err, info) {

@@ -15,6 +15,7 @@ const Form = () => {
       name: data.name,
       email: data.email,
       subject: data.subject,
+      answer: data.answer,
       message: data.message
     };
     //1.
@@ -32,6 +33,7 @@ const Form = () => {
         setValue('name', '');
         setValue('email', '');
         setValue('subject', '');
+        setValue('answer', '');
         setValue('message', '');
       }
     });
@@ -44,7 +46,7 @@ const Form = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row">
           <div className="col-md-6">
-            <div class="mb-3">
+            <div class="mb-3 ">
               <label htmlFor="name" class="form-label">
                 İsminiz
               </label>
@@ -74,7 +76,7 @@ const Form = () => {
             </div>
           </div>
           <div className="col-12">
-            <div class="mb-3">
+            <div class="mb-3 pt-4">
               <label htmlFor="subject" class="form-label">
                 Konu
               </label>
@@ -88,8 +90,24 @@ const Form = () => {
               />
             </div>
           </div>
-          <div className="col-12">
-            <div className="mb-3">
+          <div className="col-12 ">
+            <div className="mb-3  pt-4">
+              <label htmlFor="message" className="form-label">
+                Neye İhtiyacınız Var?
+              </label>
+              <select className="form-select" {...register('answer')}>
+                <option selected>Seçiniz</option>
+                <option value="Yurt İçi E-Ticaret Danışmanlığı">
+                  Yurt İçi E-Ticaret Danışmanlığı
+                </option>
+                <option value="Yurt İçi E-Ticaret Eğitimi">Yurt İçi E-Ticaret Eğitimi</option>
+                <option value="Yurt Dışı Etsy Danışmanlığı">Yurt Dışı Etsy Danışmanlığı</option>
+                <option value="Web Site Yazılımı">Web Site Yazılımı</option>
+              </select>
+            </div>
+          </div>
+          <div className="col-12 ">
+            <div className="mb-3  pt-4">
               <label htmlFor="message" className="form-label">
                 Mesajınız
               </label>
@@ -102,7 +120,8 @@ const Form = () => {
               />
             </div>
           </div>
-          <div className="col-12">
+
+          <div className="col-12  pt-4">
             <button type="submit" className="btn btn-primary w-100">
               Gönder
             </button>

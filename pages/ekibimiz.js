@@ -3,6 +3,15 @@ import { FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 import ReactCardFlipper from 'react-card-flipper';
 import Layout from '../components/Layout';
 import styles from '../styles/Team.module.css';
+import { Parallax } from 'react-parallax';
+
+const insideStyles = {
+  padding: 100,
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%,-50%)'
+};
 
 const teamMembers = [
   {
@@ -41,18 +50,19 @@ const teamMembers = [
   }
 ];
 
+const image1 = 'https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg';
+
 const Team = () => {
   return (
     <Layout>
       <div>
-        <section
-          id="contact-section"
-          className={`d-flex justify-content-center  ${styles.team}`}
-          style={{ minHeight: '600px', height: 'auto' }}>
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <h2 className="text-white fw-bold fs-1 ">Ekibimiz</h2>
+        <Parallax bgImage={image1} strength={500}>
+          <div style={{ height: 500 }}>
+            <div style={insideStyles} className="fw-bold fs-1   text-dark rounded-circle">
+              Ekibimiz
+            </div>
           </div>
-        </section>
+        </Parallax>
         <section
           id="kurucu"
           className="d-flex flex-column  align-items-center pt-5"
@@ -61,7 +71,7 @@ const Team = () => {
           <div className="row gx-5">
             {teamMembers[0].founder.map((item) => (
               <div className="col-md-4 col-sm-12 d-flex flex-column align-items-center justify-content-center p-3">
-                <ReactCardFlipper width="300px" height="330px" behavior="hover" levitate={true}>
+                <ReactCardFlipper width="300px" height="330px" behavior="click" levitate={true}>
                   <div>
                     <img
                       src={item.image}
@@ -75,13 +85,25 @@ const Team = () => {
                     <Link href={item.instagram}>
                       <a target="blank">
                         <FaInstagramSquare
-                          style={{ width: '50px', height: '50px', cursor: 'pointer' }}
+                          style={{
+                            width: '50px',
+                            height: '50px',
+                            cursor: 'pointer',
+                            color: 'white'
+                          }}
                         />
                       </a>
                     </Link>
                     <Link href={item.linkedin}>
                       <a target="_blank">
-                        <FaLinkedin style={{ width: '50px', height: '50px', cursor: 'pointer' }} />
+                        <FaLinkedin
+                          style={{
+                            width: '50px',
+                            height: '50px',
+                            cursor: 'pointer',
+                            color: 'white'
+                          }}
+                        />
                       </a>
                     </Link>
                   </div>
