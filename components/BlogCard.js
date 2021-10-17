@@ -6,11 +6,11 @@ export default function BlogCard({ title, publishedAt, mainImage, excerpt, slug 
 
   return (
     <div>
-      <div className="col">
+      <div className="col h-100 ">
         <div
-          className="card"
+          className="card h-100"
           onClick={() => router.push(`/post/${slug.current}`)}
-          style={{ cursor: 'pointer' }}>
+          style={{ cursor: 'pointer', height: 'auto' }}>
           <img src={mainImage.asset.url} className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
