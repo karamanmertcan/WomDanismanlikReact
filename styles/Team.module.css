@@ -5,7 +5,7 @@
     #00c9ff,
     #92fe9d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-size: 400% 400%;
+  background-size: 330px 330px;
   animation: gradient 15s ease infinite;
 }
 
