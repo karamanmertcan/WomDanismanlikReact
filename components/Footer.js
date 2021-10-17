@@ -1,116 +1,115 @@
+import Link from 'next/link';
+import { FaTwitter, FaInstagram, FaFacebookF, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <>
-      <footer className="text-center text-lg-start bg-light text-muted ">
-        <section className="d-flex justify-content-center justify-content-lg-between border-bottom">
-          <div>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-twitter"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-google"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-instagram"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a href="" className="me-4 text-reset">
-              <i className="fab fa-github"></i>
-            </a>
-          </div>
-        </section>
-
-        <section className="">
+      <footer className="text-center text-lg-start bg-dark text-muted ">
+        <section className="pt-3">
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">
-                  <i className="fas fa-gem me-3"></i>Company name
+                <h6 className="fw-bold mb-4">Hakkımızda
                 </h6>
                 <p>
-                  Here you can use rows and columns to organize your footer content. Lorem ipsum
-                  dolor sit amet, consectetur adipisicing elit.
+                  Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır.
                 </p>
               </div>
 
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                <h6 className="fw-bold mb-4">Hızlı Linkler</h6>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Angular
-                  </a>
+                  <Link href="/hakkimizda">
+                    <a className="text-reset">Hakkkımızda</a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    React
-                  </a>
+                  <Link href="/hizmetler">
+                    <a className="text-reset">
+                      Hizmetler
+                    </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Vue
-                  </a>
+                  <Link href="/yorumlar">
+                    <a href="#!" className="text-reset">
+                      Müşteri Yorumları
+                    </a>
+                  </Link>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Laravel
-                  </a>
+
+                  <Link href="/iletisim">
+                    <a className="text-reset">
+                      İletişim
+                    </a>
+                  </Link>
                 </p>
               </div>
 
               <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Pricing
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Settings
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Orders
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-reset">
-                    Help
-                  </a>
-                </p>
-              </div>
-
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-                <p>
-                  <i className="fas fa-home me-3"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i className="fas fa-envelope me-3"></i>
-                  info@example.com
-                </p>
-                <p>
-                  <i className="fas fa-phone me-3"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i className="fas fa-print me-3"></i> + 01 234 567 89
-                </p>
+                <h6 className="fw-bold mb-4">Bizi Takip Edin!</h6>
+                <span>
+                  <span className={`p-3 ps-0 rounded-circle `}>
+                    <Link href="#">
+                      <a>
+                        <FaFacebookF
+                          className="mx-auto"
+                          style={{
+                            marginRight: '20px',
+                            color: 'white'
+                          }}
+                        />
+                      </a>
+                    </Link>
+                  </span>
+                  <span className={`p-3 rounded-circle `}>
+                    <Link href="https://twitter.com/WomDanismanlik">
+                      <a>
+                        <FaTwitter
+                          className="mx-auto"
+                          style={{
+                            marginRight: '20px',
+                            color: 'white'
+                          }}
+                        />
+                      </a>
+                    </Link>
+                  </span>
+                  <span className={` p-3 rounded-circle `}>
+                    <Link href="https://www.instagram.com/womdanismanlik/">
+                      <a target="_blank">
+                        <FaInstagram
+                          className="mx-auto"
+                          style={{
+                            marginRight: '20px',
+                            color: 'white'
+                          }}
+                        />
+                      </a>
+                    </Link>
+                  </span>
+                  <span className={`p-3 pe-0 rounded-circle `}>
+                    <Link href="#">
+                      <a>
+                        <FaLinkedinIn
+                          className="mx-auto"
+                          style={{
+                            marginRight: '20px',
+                            color: 'white'
+                          }}
+                        />
+                      </a>
+                    </Link>
+                  </span>
+                </span>
               </div>
             </div>
           </div>
         </section>
 
         <div className="text-center p-4">
-          © 2021 Copyright:
-          <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a>
+          Copyright © 2021 Tüm Hakları Saklıdır by <a className="text-reset fw-bold" href="https://www.womdanismanlik.com/">WOM Danışmanlık</a>
         </div>
       </footer>
     </>
