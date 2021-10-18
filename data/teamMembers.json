@@ -1,0 +1,118 @@
+{
+  "founder": [
+    {
+      "id": 1,
+      "name": "Emre Uzun",
+      "image": "/images/emreUzun.jpeg",
+      "linkedin": "https://www.linkedin.com/in/uzunemre/",
+      "instagram": "https://www.instagram.com/emreuzun.eu/",
+      "degree": "KURUCU ORTAK"
+    },
+    {
+      "id": 2,
+      "name": "Ozan Özdemir",
+      "image": "/images/ozanozdemir.jpeg",
+      "linkedin": "https://www.linkedin.com/in/a-ozan-%C3%B6zdemir-584021162/",
+      "instagram": "https://www.instagram.com/aozanozdemir/",
+      "degree": "KURUCU ORTAK"
+    },
+    {
+      "id": 3,
+      "name": "Furkan Eraslan",
+      "image": "/images/uzun.jpeg",
+      "linkedin": "#",
+      "instagram": "https://www.instagram.com/furkneraslan/",
+      "degree": "KURUCU ORTAK"
+    }
+  ],
+  "dmm": [
+    {
+      "id": 1,
+      "name": "Ecem Efekan",
+      "image": "/images/ecemefekan.webp",
+      "linkedin": "https://www.linkedin.com/in/ecem-efekan-b22030164/",
+      "instagram": "https://www.instagram.com/ecemefekan/?hl=en",
+      "degree": "DIJITAL PAZARLAMA UZMANI"
+    },
+    {
+      "id": 2,
+      "name": "Su Aleyna Kaya",
+      "image": "/images/aleyna.jpg",
+      "linkedin": "https://www.linkedin.com/in/su-aleyna-kaya-86b8b719b/",
+      "instagram": "https://www.instagram.com/kayasuuu/",
+      "degree": "DIJITAL PAZARLAMA UZMANI"
+    }
+  ],
+  "ydt": [
+    {
+      "id": 1,
+      "name": "Muhammed Mustafa Güney",
+      "image": "/images/musta.jpeg",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/mmgny/",
+      "degree": "YURT DIŞI TEMSILCIMIZ (AMERIKA)"
+    },
+    {
+      "id": 2,
+      "name": "Muhammed Ali Yücedağ",
+      "image": "/images/salva.jpeg",
+      "linkedin": "https://www.linkedin.com/in/muhammedaliyucedag",
+      "instagram": "https://www.instagram.com/muhammedaliyucedag",
+      "degree": "YURT DIŞI TEMSILCIMIZ (INGILTERE)"
+    }
+  ],
+  "te": [
+    {
+      "id": 1,
+      "name": "Çiğdem Polatcan",
+      "image": "/images/cigdem.jpeg",
+      "linkedin": "https://www.linkedin.com/in/çiğdem-polatcan-b929661b5",
+      "instagram": "https://www.instagram.com/animationpolatcan/",
+      "degree": "ANIMASYON TASARIM UZMANI"
+    },
+    {
+      "id": 2,
+      "name": "İrem Berçin",
+      "image": "/images/irem.jpeg",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/irembercin/",
+      "degree": "TASARIM UZMANI"
+    }
+  ],
+  "ye": [
+    {
+      "id": 1,
+      "name": "Yunus Gözütok",
+      "image": "/images/yunusgozutok.jpg",
+      "linkedin": "https://www.linkedin.com/in/ymgozutok/",
+      "instagram": "https://www.instagram.com/mrymg",
+      "degree": "YAZILIM MÜHENDISI"
+    },
+    {
+      "id": 2,
+      "name": "Mertcan Karaman",
+      "image": "/images/mertcankaraman-2.jpeg",
+      "linkedin": "https://www.linkedin.com/in/mertcankaraman/",
+      "instagram": "https://www.instagram.com/karaman_mertcan/",
+      "degree": "YAZILIM MÜHENDISI"
+    },
+    {
+      "id": 3,
+      "name": "Ferhat Osanoğlu",
+      "image": "/images/ferhatosanoglu-2.jpeg",
+      "linkedin": "https://www.linkedin.com/in/ferhatosanoglu/",
+      "instagram": "https://www.instagram.com/ferhatosanoglu/",
+      "degree": "YAZILIM MÜHENDISI"
+    }
+  ],
+  "avukat": [
+    {
+      "id": 1,
+      "name": "Caner Yıldız",
+      "image": "/images/caner.jpeg",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/canerryl",
+      "degree": "AVUKAT"
+    }
+  ]
+}
