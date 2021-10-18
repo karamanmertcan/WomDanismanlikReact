@@ -14,7 +14,7 @@
 }
 
 .slide__slick {
-  height: 750px;
+  height: 760px;
   width: 100%;
   position: relative;
   z-index: 1001;
@@ -43,4 +43,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-close {
+  background-color: #ffff !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .slick-dots {
+    visibility: hidden;
+  }
 }

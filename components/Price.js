@@ -1,13 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import { TiTick } from 'react-icons/ti';
 import styles from '../styles/Card.module.css';
 const Price = () => {
+  const [mouse, setMouse] = useState(false);
   return (
     <div className="w-100 container">
       <div className="row">
         <div
-          className={`col-md-4 col-sm-12 pt-5  d-flex  flex-column justify-content-start ${styles.my__card}  align-items-center shadow-lg`}
+          className={`col-lg-4  col-sm-12 pt-5  d-flex  flex-column justify-content-start ${styles.my__card} ${styles.my__card_color}  align-items-center shadow-lg`}
           style={{
             color: 'black',
             backgroundColor: '#b2bec3',
@@ -52,7 +53,7 @@ const Price = () => {
           </Fade>
         </div>
         <div
-          className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
+          className={`col-lg-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
           style={{
             color: 'black',
             backgroundColor: '#ecf0f1',
@@ -89,7 +90,7 @@ const Price = () => {
           </Fade>
         </div>
         <div
-          className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
+          className={`col-lg-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
           style={{
             color: 'black',
             backgroundColor: '#ffffff',

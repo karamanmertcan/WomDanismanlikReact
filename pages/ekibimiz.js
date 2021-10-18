@@ -16,7 +16,10 @@ const image1 = 'https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_
 
 const Team = () => {
   return (
-    <Layout>
+    <Layout
+      title="WOM Danışmanlık | Ekibimiz"
+      keywords="WOM,Danışmanlık,Etsy,E-ticaret,Yurtiçi,Yurtdışı,Emre Uzun,Mertcan Karaman,Ferhat Osanoğlu,Doğru SEO,Doğru Reklam,Karlı Satış,ETSY DANIŞMANLIK,E-Ticaret Danışmanlığı,E-Ticaret Eğitimi,Yazılım Hizmeti,Dijital Pazarlama,Ecem Efekan,Ozan Özdemir,Furkan Eraslan,Yüksek Kazanç,Ödeme Sistemleri,Döviz ile Yüksek Kazanç,Verimli Reklam"
+      description="Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.">
       <div>
         <Parallax bgImage={image1} strength={500}>
           <div style={{ height: 500 }}></div>

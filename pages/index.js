@@ -55,7 +55,10 @@ export default function Home({ data }) {
     }
   ];
   return (
-    <Layout>
+    <Layout
+      title="WOM Danışmanlık"
+      keywords="WOM,Danışmanlık,Etsy,E-ticaret,Yurtiçi,Yurtdışı,Emre Uzun,Mertcan Karaman,Ferhat Osanoğlu,Doğru SEO,Doğru Reklam,Karlı Satış,ETSY DANIŞMANLIK,E-Ticaret Danışmanlığı,E-Ticaret Eğitimi,Yazılım Hizmeti,Dijital Pazarlama,Ecem Efekan,Ozan Özdemir,Furkan Eraslan,Yüksek Kazanç,Ödeme Sistemleri,Döviz ile Yüksek Kazanç,Verimli Reklam"
+      description="Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.">
       <div style={{ height: 'auto', paddingBottom: '100px' }} className="overflow-auto">
         <section className="h-100 w-100 landing">
           <Landing />
@@ -142,7 +145,7 @@ export default function Home({ data }) {
           />
           <div id="particles-js"></div>
         </section>
-        <section className="about container d-flex pt-5" id="etsy">
+        <section className="about container d-flex pt-5" id="about">
           <div className=" w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
             <div className="d-flex  flex-column justify-content-center">
               <Fade top>
@@ -155,15 +158,15 @@ export default function Home({ data }) {
               </Fade>
             </div>
             <div className="row">
-              <div className="col-md-6 col-sm-12">
+              <div className="col-md-6 col-sm-12 d-flex justify-content-end align-items-center">
                 <Fade left>
-                  <Image src="/images/neden.png" width={550} height={400} priority={true} />
+                  <Image src="/images/teamwork.svg" width={550} height={400} priority={true} />
                 </Fade>
               </div>
               <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-content-center">
                 <Fade right>
-                  <h2>Neden WOM Danışmanlık</h2>
-                  <p>
+                  <h2 className="text-center text-lg-start">Neden WOM Danışmanlık</h2>
+                  <p className="text-center text-lg-start">
                     Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü
                     toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında
                     bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç
@@ -332,13 +335,15 @@ export default function Home({ data }) {
             </Fade>
           </div>
         </section>
-        <section className=" mt-5 py-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+        <section
+          className=" mt-5 py-5 w-100"
+          style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
           <Fade bottom>
             <div className="w-100 container">
               <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
                 Blog Yazıları
               </h2>
-              <div className="row row-cols-1 row-cols-md-3 g-4">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 {data.map((item, index) => {
                   const { title, publishedAt, mainImage, excerpt, slug } = item;
                   return (

@@ -23,11 +23,11 @@ const PostPage = (props) => {
   console.log(title);
 
   return (
-    <Layout>
+    <Layout title={title} description={excerpt}>
       <div style={{ marginTop: '100px' }}>
         <div className="container">
           <button type="button" className="btn btn-primary">
-            <Link href="/post">
+            <Link href="/blog">
               <a style={{ color: 'white', textDecoration: 'none' }}>Geri Dön</a>
             </Link>
           </button>
@@ -64,7 +64,7 @@ const query = `*[_type == "post" && slug.current == $slug][0] {
 }
 `;
 
-PostPage.getInitialProps = async function getInitialProps(context) {
+PostPage.getInitialProps = async function getServerSideProps(context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = '' } = context.query;
   return await sanityClient.fetch(query, { slug });

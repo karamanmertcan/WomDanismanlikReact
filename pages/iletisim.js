@@ -20,7 +20,10 @@ const image1 = 'https://cdn.pixabay.com/photo/2017/12/02/14/38/contact-us-299300
 
 const Contact = () => {
   return (
-    <Layout>
+    <Layout
+      title="WOM Danışmanlık | İletişim"
+      keywords="WOM,Danışmanlık,Etsy,E-ticaret,Yurtiçi,Yurtdışı,Emre Uzun,Mertcan Karaman,Ferhat Osanoğlu,Doğru SEO,Doğru Reklam,Karlı Satış,ETSY DANIŞMANLIK,E-Ticaret Danışmanlığı,E-Ticaret Eğitimi,Yazılım Hizmeti,Dijital Pazarlama,Ecem Efekan,Ozan Özdemir,Furkan Eraslan,Yüksek Kazanç,Ödeme Sistemleri,Döviz ile Yüksek Kazanç,Verimli Reklam"
+      description="Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.">
       <div>
         <Parallax bgImage={image1} strength={500}>
           <div style={{ height: 500 }}>
@@ -56,19 +59,19 @@ const Contact = () => {
                         Formu doldurduğunuz vakit ekibimiz 24 saat içinde sizinle iletişime
                         geçecektir.
                       </h3>
-                      <div className="pt-5 d-flex justify-content-start   align-items-center">
+                      <div className="pt-5 d-flex justify-content-center   align-items-center">
                         <span style={{ marginRight: '10px' }}>
                           <BsFillTelephoneFill style={{ height: '30px', width: '30px' }} />
                         </span>
                         <span className="fw-bold fs-5 text-light  ">+90 532 654 1234</span>
                       </div>
-                      <div className="pt-5 d-flex justify-content-start align-items-center">
+                      <div className="pt-5 d-flex justify-content-center align-items-center">
                         <span style={{ marginRight: '10px' }}>
                           <MdEmail style={{ height: '30px', width: '30px' }} />
                         </span>
                         <span className="fw-bold fs-5 text-light  ">womdanismanlik@gmail.com</span>
                       </div>
-                      <div className="pt-5 d-flex justify-content-start   align-items-center">
+                      <div className="pt-5 d-flex justify-content-center   align-items-center">
                         <span style={{ marginRight: '10px' }}>
                           <HiLocationMarker style={{ height: '30px', width: '30px' }} />
                         </span>
