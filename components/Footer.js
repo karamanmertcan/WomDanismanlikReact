@@ -9,10 +9,11 @@ const Footer = () => {
           <div className="container text-center text-md-start mt-5">
             <div className="row mt-3">
               <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <h6 className="fw-bold mb-4">Hakkımızda
-                </h6>
+                <h6 className="fw-bold mb-4">Hakkımızda</h6>
                 <p>
-                  Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır.
+                  Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar
+                  ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve
+                  tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır.
                 </p>
               </div>
 
@@ -24,25 +25,20 @@ const Footer = () => {
                   </Link>
                 </p>
                 <p>
-                  <Link href="/hizmetler">
-                    <a className="text-reset">
-                      Hizmetler
-                    </a>
+                  <Link href="/#services">
+                    <a className="text-reset">Hizmetler</a>
                   </Link>
                 </p>
                 <p>
-                  <Link href="/yorumlar">
+                  <Link href="/#yorum">
                     <a href="#!" className="text-reset">
                       Müşteri Yorumları
                     </a>
                   </Link>
                 </p>
                 <p>
-
                   <Link href="/iletisim">
-                    <a className="text-reset">
-                      İletişim
-                    </a>
+                    <a className="text-reset">İletişim</a>
                   </Link>
                 </p>
               </div>
@@ -109,7 +105,10 @@ const Footer = () => {
         </section>
 
         <div className="text-center p-4">
-          Copyright © 2021 Tüm Hakları Saklıdır by <a className="text-reset fw-bold" href="https://www.womdanismanlik.com/">WOM Danışmanlık</a>
+          Copyright © 2021 Tüm Hakları Saklıdır by{' '}
+          <a className="text-reset fw-bold" href="https://www.womdanismanlik.com/">
+            WOM Danışmanlık
+          </a>
         </div>
       </footer>
     </>

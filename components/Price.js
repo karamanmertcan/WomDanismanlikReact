@@ -6,14 +6,14 @@ const Price = () => {
   return (
     <div className="w-100 container">
       <div className="row">
-        <Fade left>
-          <div
-            className={`col-md-4 col-sm-12 pt-5  d-flex  flex-column justify-content-start ${styles.my__card}  align-items-center shadow-lg`}
-            style={{
-              color: 'black',
-              backgroundColor: '#b2bec3',
-              height: '600px'
-            }}>
+        <div
+          className={`col-md-4 col-sm-12 pt-5  d-flex  flex-column justify-content-start ${styles.my__card}  align-items-center shadow-lg`}
+          style={{
+            color: 'black',
+            backgroundColor: '#b2bec3',
+            height: '600px'
+          }}>
+          <Fade left>
             <div>
               <h2 className="text-center fw-bold" style={{ color: 'black' }}>
                 Bronz Paket
@@ -49,16 +49,16 @@ const Price = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </Fade>
-        <Fade bottom>
-          <div
-            className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
-            style={{
-              color: 'black',
-              backgroundColor: '#ecf0f1',
-              height: '600px'
-            }}>
+          </Fade>
+        </div>
+        <div
+          className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
+          style={{
+            color: 'black',
+            backgroundColor: '#ecf0f1',
+            height: '600px'
+          }}>
+          <Fade top>
             <div>
               <h2 className="text-center fw-bold" style={{ color: 'black' }}>
                 Gold Paket
@@ -86,16 +86,16 @@ const Price = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </Fade>
-        <Fade right>
-          <div
-            className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
-            style={{
-              color: 'black',
-              backgroundColor: '#ffffff',
-              height: '600px'
-            }}>
+          </Fade>
+        </div>
+        <div
+          className={`col-md-4 col-sm-12 pt-5 ${styles.my__card} d-flex flex-column justify-content-start   align-items-center shadow-lg`}
+          style={{
+            color: 'black',
+            backgroundColor: '#ffffff',
+            height: '600px'
+          }}>
+          <Fade right>
             <div>
               <h2 className="text-center fw-bold" style={{ color: 'black' }}>
                 Premium Paket
@@ -123,8 +123,8 @@ const Price = () => {
                 </li>
               </ul>
             </div>
-          </div>
-        </Fade>
+          </Fade>
+        </div>
       </div>
     </div>
   );

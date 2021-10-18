@@ -262,9 +262,7 @@ export default function Home({ data }) {
                 <div className="row">
                   {images.map((item) => (
                     <div key={item.id} className="col-md-4 col-sm-12">
-                      <Fade clearp>
-                        <ModalImage small={item.image} large={item.image} alt="E-Ticaret" />
-                      </Fade>
+                      <ModalImage small={item.image} large={item.image} alt="E-Ticaret" />
                     </div>
                   ))}
                 </div>
@@ -273,7 +271,7 @@ export default function Home({ data }) {
           </div>
         </section>
 
-        <section className="container mt-5 pt-5" style={{ height: 'auto' }}>
+        <section className="container mt-5 pt-5" style={{ height: 'auto' }} id="services">
           <div className="w-100">
             <Fade clear>
               <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
@@ -294,7 +292,7 @@ export default function Home({ data }) {
           </Fade>
         </section>
 
-        <section className=" mt-5 py-5" style={{ height: 'auto' }}>
+        <section className=" mt-5 py-5" style={{ height: 'auto' }} id="yorum">
           <div className="w-100 container   ">
             <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
               Müşteri Yorumları

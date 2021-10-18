@@ -20,7 +20,7 @@ export const Services = () => {
             <div className="col-md-6 col-sm-12 d-flex justify-content-end p-0">
               <Image src="/images/ecommerce-2.png" height={500} width={500} priority={true} />
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg p-0">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg pl-3">
               <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1">
                 01. E-Ticaret Danışmanlığı
               </h2>
@@ -28,6 +28,11 @@ export const Services = () => {
                 <p className="mt-3   w-100" style={{ fontSize: '1rem', color: '#808080' }}>
                   Yurt İçi ve Yurt Dışı Pazaryerleri Yönetim Danışmanlığı Hizmetleri Vermekteyiz
                 </p>
+              </div>
+              <div className=" text-lg-start ">
+                <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                  Daha Fazlası
+                </button>
               </div>
             </div>
           </div>
@@ -37,7 +42,7 @@ export const Services = () => {
             <div className="col-md-6 col-sm-12 d-flex justify-content-end p-0">
               <Image src="/images/hero_2.jpg" height={500} width={500} priority={true} />
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg p-0">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg pl-3">
               <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1">
                 02. E-Ticaret Eğitimi
               </h2>
@@ -59,7 +64,7 @@ export const Services = () => {
             <div className="col-md-6 col-sm-12 d-flex justify-content-end p-0">
               <Image src="/images/software-1.png" height={500} width={500} priority={true} />
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg p-0">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg pl-3">
               <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1  ">
                 03. Yazılım Hizmeti
               </h2>
@@ -67,6 +72,11 @@ export const Services = () => {
                 <p className="mt-3   w-100" style={{ fontSize: '1rem', color: '#808080' }}>
                   E-Ticaret çözümlerine özel mobil ve web yazılım hizmeti vermekteyiz.
                 </p>
+              </div>
+              <div className=" text-lg-start ">
+                <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                  Daha Fazlası
+                </button>
               </div>
             </div>
           </div>
@@ -76,7 +86,7 @@ export const Services = () => {
             <div className="col-md-6 col-sm-12 d-flex justify-content-end p-0">
               <Image src="/images/dmm-1.png" height={500} width={500} priority={true} />
             </div>
-            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg p-0">
+            <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center text-lg-start shadow-lg pl-3">
               <h2 style={{ color: '#007BFF' }} className="fw-bold fs-1">
                 04. Dijital Pazarlama
               </h2>
