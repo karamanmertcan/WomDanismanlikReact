@@ -6,13 +6,6 @@ const MyApp = ({ pageProps, Component }) => {
   return (
     <>
       <Head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', {NEXT_PUBLIC_GOOGLE_ANALYTICS});
-        </script>
         // Responsive meta tag
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         // bootstrap CDN
