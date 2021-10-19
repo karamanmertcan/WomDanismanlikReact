@@ -22,7 +22,11 @@ const Team = () => {
       description="Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.">
       <div>
         <Parallax bgImage={image1} strength={500}>
-          <div style={{ height: 500 }}></div>
+          <div style={{ height: 500 }}>
+            <div style={insideStyles}>
+              <h1 className="fs-1 fw-bold">Ekibimiz</h1>
+            </div>
+          </div>
         </Parallax>
         <Fade bottom>
           <section
@@ -33,6 +37,7 @@ const Team = () => {
             <div className="row">
               {TeamMembers.founder.map((item, index) => (
                 <TeamCard
+                  key={item.id}
                   id={item.id}
                   name={item.name}
                   degree={item.degree}

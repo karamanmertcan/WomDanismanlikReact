@@ -8,7 +8,7 @@ const TeamCard = ({ id, instagram, linkedin, name, degree, image }) => {
     <div
       key={id}
       className={`col d-flex flex-column align-items-center justify-content-center p-3`}>
-      <ReactCardFlipper width="300px" height="330px" behavior="hover" levitate={true}>
+      <ReactCardFlipper width="300px" height="330px" behavior="click" levitate={true}>
         <div>
           <img
             src={image}
