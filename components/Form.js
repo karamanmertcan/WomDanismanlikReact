@@ -99,6 +99,7 @@ const Form = () => {
                 <option value="Yurt İçi E-Ticaret Eğitimi">Yurt İçi E-Ticaret Eğitimi</option>
                 <option value="Yurt Dışı Etsy Danışmanlığı">Yurt Dışı Etsy Danışmanlığı</option>
                 <option value="Web Site Yazılımı">Web Site Yazılımı</option>
+                <option value="Diğer">Diğer</option>
               </select>
             </div>
           </div>
