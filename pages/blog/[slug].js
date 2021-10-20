@@ -64,7 +64,7 @@ const query = `*[_type == "post" && slug.current == $slug][0] {
 }
 `;
 
-PostPage.getInitialProps = async function getServerSideProps(context) {
+PostPage.getInitialProps = async function (context) {
   // It's important to default the slug so that it doesn't return "undefined"
   const { slug = '' } = context.query;
   return await sanityClient.fetch(query, { slug });
