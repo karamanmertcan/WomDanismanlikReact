@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postbuild": "next-sitemap --config sitemap.js"
+    "start": "next start"
   },
   "dependencies": {
     "@sanity/block-content-to-react": "^3.0.0",

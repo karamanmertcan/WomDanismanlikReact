@@ -344,7 +344,7 @@ const Home = ({ data }) => {
                 Blog Yazıları
               </h2>
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {data.map((item, index) => {
+                {data?.map((item, index) => {
                   const { title, publishedAt, mainImage, excerpt, slug } = item;
                   return (
                     <BlogCard
@@ -369,7 +369,7 @@ const Home = ({ data }) => {
   );
 };
 
-Home.getInitialProps = async () => {
+Home.getInitialProps = async function () {
   const data = await sanityClient.fetch(
     `*[_type == "post"]{
     title,
