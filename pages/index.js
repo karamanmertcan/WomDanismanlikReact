@@ -369,7 +369,7 @@ export default function Home({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const data = await sanityClient.fetch(
     `*[_type == "post"]{
     title,
