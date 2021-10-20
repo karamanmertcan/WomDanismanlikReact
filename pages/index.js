@@ -14,7 +14,7 @@ import { Services } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import Why from '../components/Why';
 
-export default function Home({ data }) {
+const Home = ({ data }) => {
   const particlesInit = (main) => {
     console.log(main);
 
@@ -367,9 +367,9 @@ export default function Home({ data }) {
       </div>
     </Layout>
   );
-}
+};
 
-export async function getStaticProps() {
+Home.getInitialProps = async () => {
   const data = await sanityClient.fetch(
     `*[_type == "post"]{
     title,
@@ -389,7 +389,8 @@ export async function getStaticProps() {
   return {
     props: {
       data
-    },
-    fallback: true
+    }
   };
-}
+};
+
+export default Home;
