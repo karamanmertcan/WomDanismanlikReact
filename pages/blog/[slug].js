@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import sanityClient from '../../client.js';
-import { useNextSanityImage } from 'next-sanity-image';
 import BlockContent from '@sanity/block-content-to-react';
 import Layout from '../../components/Layout';
 import Link from 'next/link';
@@ -17,11 +16,7 @@ const serializers = {
 };
 
 const PostPage = (props) => {
-  console.log(props);
-
   const { title, excerpt, mainImage, body, publishedAt } = props;
-  console.log(title);
-
   return (
     <Layout title={title} description={excerpt}>
       <div style={{ marginTop: '100px' }}>

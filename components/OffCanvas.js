@@ -34,7 +34,7 @@ function OffCanvas() {
             </Link>
           </span>
           <span className="d-block pt-3">
-            <Link href="/hakkimizda">
+            <Link href="/#about">
               <a style={{ textDecoration: 'none' }} className="text-light fs-2">
                 Hakkımızda
               </a>

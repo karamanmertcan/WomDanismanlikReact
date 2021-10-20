@@ -361,9 +361,6 @@ export default function Home({ data }) {
             </div>
           </Fade>
         </section>
-        {/* <section className=" mt-5 py-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
-          <BlockContent blocks={data[0].body} serializers={serializers} />
-        </section> */}
       </div>
     </Layout>
   );

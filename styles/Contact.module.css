@@ -37,6 +37,8 @@
 }
 
 .icons {
+  position: relative;
+  z-index: 102;
   transition: all 0.2s;
 }
 

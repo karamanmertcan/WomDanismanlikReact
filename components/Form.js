@@ -27,9 +27,7 @@ const Form = () => {
       },
       body: JSON.stringify(info)
     }).then((res) => {
-      console.log('Response received');
       if (res.status === 200) {
-        console.log('Response succeeded!');
         setValue('name', '');
         setValue('email', '');
         setValue('subject', '');
@@ -37,8 +35,6 @@ const Form = () => {
         setValue('message', '');
       }
     });
-
-    console.log(data);
   };
 
   return (
