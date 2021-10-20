@@ -14,7 +14,7 @@ import { Services } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import Why from '../components/Why';
 
-const Home = ({ data }) => {
+export default function Home({ data }) {
   const particlesInit = (main) => {
     console.log(main);
 
@@ -344,7 +344,7 @@ const Home = ({ data }) => {
                 Blog Yazıları
               </h2>
               <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-                {data?.map((item, index) => {
+                {data.map((item, index) => {
                   const { title, publishedAt, mainImage, excerpt, slug } = item;
                   return (
                     <BlogCard
@@ -367,9 +367,9 @@ const Home = ({ data }) => {
       </div>
     </Layout>
   );
-};
+}
 
-Home.getInitialProps = async function () {
+export async function getServerSideProps() {
   const data = await sanityClient.fetch(
     `*[_type == "post"]{
     title,
@@ -391,6 +391,4 @@ Home.getInitialProps = async function () {
       data
     }
   };
-};
-
-export default Home;
+}
