@@ -5,12 +5,13 @@
 }
 
 .slick-dots li button:before {
-  color: white;
+  color: black;
 }
 
 .slick-dots {
   position: absolute;
   top: 90%;
+  color: 'black';
 }
 
 .slide__slick {

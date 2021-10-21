@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link';
 import Slider from 'react-slick';
 import Image from 'next/image';
 
@@ -30,9 +31,11 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" className="btn btn-primary btn-sm rounded-pill">
-                  Daha Fazlası
-                </button>
+                <Link href="/iletisim">
+                  <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                    Teklif Al
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -52,9 +55,11 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" className="btn btn-primary btn-sm rounded-pill">
-                  Daha Fazlası
-                </button>
+                <Link href="/iletisim">
+                  <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                    Teklif Al
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,9 +79,11 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" className="btn btn-primary btn-sm rounded-pill">
-                  Daha Fazlası
-                </button>
+                <Link href="/iletisim">
+                  <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                    Teklif Al
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -96,9 +103,11 @@ export const Services = () => {
                 </p>
               </div>
               <div className=" text-lg-start ">
-                <button type="button" className="btn btn-primary btn-sm rounded-pill">
-                  Daha Fazlası
-                </button>
+                <Link href="/iletisim">
+                  <button type="button" className="btn btn-primary btn-sm rounded-pill">
+                    Teklif Al
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
