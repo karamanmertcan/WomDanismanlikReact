@@ -75,7 +75,7 @@ const Contact = () => {
                         <span style={{ marginRight: '10px' }}>
                           <HiLocationMarker style={{ height: '30px', width: '30px' }} />
                         </span>
-                        <span className="fw-bold fs-5 text-light  ">
+                        <span className={`fw-bold fs-5 text-light ${styles.contact__info}  `}>
                           Fulya Mahallesi Yeşilçimen Sokak Polat Tower Bağımsız Bölüm 430
                           Şişli/İstanbul
                         </span>
