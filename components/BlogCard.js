@@ -11,7 +11,7 @@ export default function BlogCard({ title, publishedAt, mainImage, excerpt, slug 
           className="card h-100"
           onClick={() => router.push(`/blog/${slug.current}`)}
           style={{ cursor: 'pointer', height: 'auto' }}>
-          <img src={mainImage.asset.url} className="card-img-top" />
+          <img src={mainImage.asset.url} width={100} height={250} className="card-img-top" />
           <div className="card-body">
             <h5 className="card-title">{title}</h5>
             <p className="card-text">{`${excerpt.slice(0, 100)}...`}</p>

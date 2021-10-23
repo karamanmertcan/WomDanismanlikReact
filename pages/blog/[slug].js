@@ -27,7 +27,7 @@ const PostPage = (props) => {
             </Link>
           </button>
           <h2>{title}</h2>
-          <Image layout="responsive" src={mainImage.asset.url} height={100} width={200} />
+          <Image layout="responsive" src={mainImage.asset.url} objectFit='cover' height={100} width={200} />
           <div className="d-flex justify-content-between pt-2">
             <h4>Mertcan Karaman</h4>
             <h4>{publishedAt}</h4>
