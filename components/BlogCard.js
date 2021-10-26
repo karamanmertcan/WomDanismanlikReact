@@ -17,7 +17,7 @@ export default function BlogCard({ title, publishedAt, mainImage, excerpt, slug 
             <p className="card-text">{`${excerpt.slice(0, 100)}...`}</p>
           </div>
           <div className="card-footer d-flex justify-content-between">
-            <div className="author">Mertcan Karaman</div>
+            <div className="author">WOM Danışmanlık</div>
             <div className="date">{publishedAt}</div>
           </div>
         </div>
