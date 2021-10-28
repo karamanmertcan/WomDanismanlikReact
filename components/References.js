@@ -19,7 +19,7 @@ const logo = [
   {
     id: 4,
     image: '/images/saksivecicek.png',
-    link: 'https://www.viskobet.com/'
+    link: 'https://saksivecicek.com/'
   },
   {
     id: 5,
