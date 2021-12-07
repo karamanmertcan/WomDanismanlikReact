@@ -63,7 +63,7 @@ const Contact = () => {
                         <span style={{ marginRight: '10px' }}>
                           <BsFillTelephoneFill style={{ height: '30px', width: '30px' }} />
                         </span>
-                        <span className="fw-bold fs-5 text-light  ">+90 532 654 1234</span>
+                        <span className="fw-bold fs-5 text-light  ">+90 553 362 17 88</span>
                       </div>
                       <div className="pt-5 d-flex justify-content-center align-items-center">
                         <span style={{ marginRight: '10px' }}>
