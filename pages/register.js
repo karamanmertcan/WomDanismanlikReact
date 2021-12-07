@@ -14,7 +14,6 @@ const Register = () => {
   const { register, handleSubmit, errors } = useForm();
 
   const registerSubmit = async (input) => {
-    console.log(input);
     try {
       const { data } = await axios.post(`/register`, {
         name: input.name,
@@ -28,22 +27,22 @@ const Register = () => {
   return (
     <Layout>
       <section
-        className="container mt-5   "
+        className='container mt-5   '
         style={{ height: 'auto', paddingTop: '150px', paddingBottom: '200px' }}>
-        <h1 className="d-flex justify-content-center">Üye Ol</h1>
-        <div className="row d-flex justify-content-center">
-          <div className="col-12 w-50  ">
+        <h1 className='d-flex justify-content-center'>Üye Ol</h1>
+        <div className='row d-flex justify-content-center'>
+          <div className='col-12 w-50  '>
             <AuthForm
               register={register}
               registerSubmit={registerSubmit}
               handleSubmit={handleSubmit}
-              page="register"
+              page='register'
             />
           </div>
         </div>
-        <div className="d-flex justify-content-center mt-5">
-          <Link href="/login">
-            <a className="" style={{ textDecoration: 'none', color: 'black' }}>
+        <div className='d-flex justify-content-center mt-5'>
+          <Link href='/login'>
+            <a className='' style={{ textDecoration: 'none', color: 'black' }}>
               Giriş Yap
             </a>
           </Link>

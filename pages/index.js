@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { TiTick } from 'react-icons/ti';
 import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
-import sanityClient from '../client.js';
+import { getClient } from '../client.js';
 import Accordion from '../components/Accordion';
 import BlogCard from '../components/BlogCard';
 import Landing from '../components/Landing';
@@ -57,14 +57,14 @@ export default function Home({ data }) {
   ];
   return (
     <Layout
-      title="WOM Danışmanlık"
-      keywords="WOM,Danışmanlık,Etsy,E-ticaret,Yurtiçi,Yurtdışı,Emre Uzun,Mertcan Karaman,Ferhat Osanoğlu,Doğru SEO,Doğru Reklam,Karlı Satış,ETSY DANIŞMANLIK,E-Ticaret Danışmanlığı,E-Ticaret Eğitimi,Yazılım Hizmeti,Dijital Pazarlama,Ecem Efekan,Ozan Özdemir,Furkan Eraslan,Yüksek Kazanç,Ödeme Sistemleri,Döviz ile Yüksek Kazanç,Verimli Reklam"
-      description="Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.">
-      <div style={{ height: 'auto', paddingBottom: '100px' }} className="overflow-auto">
-        <section className="h-100 w-100 landing">
+      title='WOM Danışmanlık'
+      keywords='WOM,Danışmanlık,Etsy,E-ticaret,Yurtiçi,Yurtdışı,Emre Uzun,Mertcan Karaman,Ferhat Osanoğlu,Doğru SEO,Doğru Reklam,Karlı Satış,ETSY DANIŞMANLIK,E-Ticaret Danışmanlığı,E-Ticaret Eğitimi,Yazılım Hizmeti,Dijital Pazarlama,Ecem Efekan,Ozan Özdemir,Furkan Eraslan,Yüksek Kazanç,Ödeme Sistemleri,Döviz ile Yüksek Kazanç,Verimli Reklam'
+      description='Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç sağlanmaktadır. WOM Danışmanlık genç ve uzman kadrosu ile Trendyol, Amazon, Gittigidiyor, Hepsiburada, N11, Çiçeksepeti ve ETSY pazaryerlerindeki 20 den fazla mağazaya eğitim ve danışmanlık hizmeti sunmuştur.'>
+      <div style={{ height: 'auto', paddingBottom: '100px' }} className='overflow-auto'>
+        <section className='h-100 w-100 landing'>
           <Landing />
           <Particles
-            id="tsparticles"
+            id='tsparticles'
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
@@ -144,30 +144,30 @@ export default function Home({ data }) {
               detectRetina: true
             }}
           />
-          <div id="particles-js"></div>
+          <div id='particles-js'></div>
         </section>
-        <section className="about container d-flex pt-5" id="about">
-          <div className=" w-100 h-100 d-flex flex-column justify-content-center align-items-center ">
-            <div className="d-flex  flex-column justify-content-center">
+        <section className='about container d-flex pt-5' id='about'>
+          <div className=' w-100 h-100 d-flex flex-column justify-content-center align-items-center '>
+            <div className='d-flex  flex-column justify-content-center'>
               <Fade top>
-                <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+                <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                   Hakkımızda
                 </h2>
-                <h2 style={{ fontSize: '1.25rem' }} className="text-center">
+                <h2 style={{ fontSize: '1.25rem' }} className='text-center'>
                   WOMDanışmanlık yurt içi ve yurt dışı e-ticaret pazaryeri çözümleri sunar.
                 </h2>
               </Fade>
             </div>
-            <div className="row">
-              <div className="col-md-6 col-sm-12 d-flex justify-content-end align-items-center">
+            <div className='row'>
+              <div className='col-md-6 col-sm-12 d-flex justify-content-end align-items-center'>
                 <Fade left>
-                  <Image src="/images/teamwork.svg" width={550} height={400} priority={true} />
+                  <Image src='/images/teamwork.svg' width={550} height={400} priority={true} />
                 </Fade>
               </div>
-              <div className="col-md-6 col-sm-12 d-flex flex-column justify-content-center align-content-center">
+              <div className='col-md-6 col-sm-12 d-flex flex-column justify-content-center align-content-center'>
                 <Fade right>
-                  <h2 className="text-center text-lg-start">Neden WOM Danışmanlık</h2>
-                  <p className="text-center text-lg-start">
+                  <h2 className='text-center text-lg-start'>Neden WOM Danışmanlık</h2>
+                  <p className='text-center text-lg-start'>
                     Eğitimler ve danışmanlıklar bire bir olarak yüz yüze ve/veya görüntülü
                     toplantılar ile yapılır. Her platformun kendine özgü algoritmaları hakkında
                     bilgi ve tecrübeler ile daha az reklam harcamaları ile daha fazla kazanç
@@ -181,27 +181,27 @@ export default function Home({ data }) {
           </div>
         </section>
 
-        <section className="container mt-5 pt-5" id="dogru">
-          <div className="w-100 h-100 ">
+        <section className='container mt-5 pt-5' id='dogru'>
+          <div className='w-100 h-100 '>
             <Fade bottom>
-              <div className="row">
-                <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
-                  <Image src="/images/seo.png" height={100} width={100} priority={true} />
+              <div className='row'>
+                <div className='col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center'>
+                  <Image src='/images/seo.png' height={100} width={100} priority={true} />
                   <p style={{ fontSize: '1.4rem' }}>DOĞRU SEO</p>
                   <p style={{ fontSize: '1.1rem' }}>
                     Seo konusunda eğitim ve danışmanlık vermekteyiz.
                   </p>
                 </div>
-                <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
-                  <Image src="/images/reklam.png" height={100} width={100} priority={true} />
+                <div className='col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center'>
+                  <Image src='/images/reklam.png' height={100} width={100} priority={true} />
                   <p style={{ fontSize: '1.4rem' }}>DOĞRU REKLAM</p>
                   <p style={{ fontSize: '1.1rem' }}>
                     Marketing ve remarketing için tüm e-ticaret pazaryerleri için ayrı ayrı eğitim
                     ve danışmanlık sunmaktayız.{' '}
                   </p>
                 </div>
-                <div className="col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
-                  <Image src="/images/kar.png" height={100} width={100} priority={true} />
+                <div className='col-md-4 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center'>
+                  <Image src='/images/kar.png' height={100} width={100} priority={true} />
                   <p style={{ fontSize: '1.4rem' }}>KARLI SATIŞ</p>
 
                   <p style={{ fontSize: '1.1rem' }}>
@@ -214,28 +214,28 @@ export default function Home({ data }) {
           </div>
         </section>
 
-        <section className="container mt-5 pt-5">
-          <div className="w-100 h-100 ">
-            <div className="row">
-              <div className="col-md-7 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center">
+        <section className='container mt-5 pt-5'>
+          <div className='w-100 h-100 '>
+            <div className='row'>
+              <div className='col-md-7 col-sm-12 text-center d-flex flex-column justify-content-center align-items-center'>
                 <Fade left>
-                  <Image src="/images/etsy.png" height={500} width={450} priority={true} />
+                  <Image src='/images/etsy.png' height={500} width={450} priority={true} />
                 </Fade>
               </div>
-              <div className="col-md-5 col-sm-12 text-start d-flex flex-column justify-content-start align-items-start">
+              <div className='col-md-5 col-sm-12 text-start d-flex flex-column justify-content-start align-items-start'>
                 <Fade right>
                   <h3>ETSY Danışmanlık</h3>
 
                   <p
-                    className="mt-5"
+                    className='mt-5'
                     style={{ fontSize: '1.3rem', fontWeight: '400', lineHeight: '1.7' }}>
                     Yurt dışı satışı için gözünüzü korkutan bu süreçleri bizimle anında
                     çözebilirsiniz.{' '}
                   </p>
 
                   <div
-                    className="etsy__list"
-                    className="d-flex flex-column justify-content-start align-items-start fs-5">
+                    className='etsy__list'
+                    className='d-flex flex-column justify-content-start align-items-start fs-5'>
                     <div>
                       <TiTick style={{ color: 'green', marginRight: '10px' }} />
                       Doğru ürün ve Pazar analizi
@@ -255,27 +255,27 @@ export default function Home({ data }) {
           </div>
         </section>
 
-        <section className="container mt-5 pt-5" style={{ height: 'auto' }}>
-          <div className="w-100 h-100 ">
-            <div className="d-flex flex-column justify-content-center align-items-center">
-              <h3 className="text-primary fw-bold">Referanslarımız</h3>
+        <section className='container mt-5 pt-5' style={{ height: 'auto' }}>
+          <div className='w-100 h-100 '>
+            <div className='d-flex flex-column justify-content-center align-items-center'>
+              <h3 className='text-primary fw-bold'>Referanslarımız</h3>
               <References />
             </div>
           </div>
         </section>
 
-        <section className="container mt-5 pt-5" id="dogru">
-          <div className="w-100 h-100 ">
-            <div className="row">
-              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+        <section className='container mt-5 pt-5' id='dogru'>
+          <div className='w-100 h-100 '>
+            <div className='row'>
+              <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                 Galeri
               </h2>
 
-              <div className="d-flex justify-content-center align-items-center ">
-                <div className="row">
+              <div className='d-flex justify-content-center align-items-center '>
+                <div className='row'>
                   {images.map((item) => (
-                    <div key={item.id} className="col-md-4 col-sm-12">
-                      <ModalImage small={item.image} large={item.image} alt="E-Ticaret" />
+                    <div key={item.id} className='col-md-4 col-sm-12'>
+                      <ModalImage small={item.image} large={item.image} alt='E-Ticaret' />
                     </div>
                   ))}
                 </div>
@@ -284,20 +284,20 @@ export default function Home({ data }) {
           </div>
         </section>
 
-        <section className="container mt-5 pt-5" style={{ height: 'auto' }} id="services">
-          <div className="w-100">
+        <section className='container mt-5 pt-5' style={{ height: 'auto' }} id='services'>
+          <div className='w-100'>
             <Fade clear>
-              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                 Hizmetlerimiz
               </h2>
             </Fade>
             <Services />
           </div>
         </section>
-        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
+        <section className=' mt-5 pt-5' style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
           <Fade bottom>
-            <div className="w-100 container">
-              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+            <div className='w-100 container'>
+              <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                 Neden Biz ?
               </h2>
               <Why />
@@ -305,38 +305,38 @@ export default function Home({ data }) {
           </Fade>
         </section>
 
-        <section className=" mt-5 py-5" style={{ height: 'auto' }} id="yorum">
-          <div className="w-100 container   ">
-            <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+        <section className=' mt-5 py-5' style={{ height: 'auto' }} id='yorum'>
+          <div className='w-100 container   '>
+            <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
               Müşteri Yorumları
             </h2>
             <Testimonials />
           </div>
         </section>
         <section
-          className=" mt-5 pt-5"
+          className=' mt-5 pt-5'
           style={{
             height: 'auto',
 
             backgroundColor: '#F8F9FA',
             paddingBottom: '100px'
           }}>
-          <div className="w-100">
+          <div className='w-100'>
             <Price />
 
             <Fade clear>
-              <div className="d-flex justify-content-center pt-5" style={{ width: '100%' }}>
-                <Link href="/iletisim">
-                  <button className="btn btn-primary btn-lg rounded-pill w-50">Teklif Al</button>
+              <div className='d-flex justify-content-center pt-5' style={{ width: '100%' }}>
+                <Link href='/iletisim'>
+                  <button className='btn btn-primary btn-lg rounded-pill w-50'>Teklif Al</button>
                 </Link>
               </div>
             </Fade>
           </div>
         </section>
-        <section className=" mt-5 pt-5" style={{ height: 'auto', backgroundColor: '#ffffff' }}>
-          <div className="w-100 container">
+        <section className=' mt-5 pt-5' style={{ height: 'auto', backgroundColor: '#ffffff' }}>
+          <div className='w-100 container'>
             <Fade clear>
-              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+              <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                 Sık Sorulan Sorular
               </h2>
             </Fade>
@@ -346,14 +346,14 @@ export default function Home({ data }) {
           </div>
         </section>
         <section
-          className=" mt-5 py-5 w-100"
+          className=' mt-5 py-5 w-100'
           style={{ height: 'auto', backgroundColor: '#F8F9FA' }}>
           <Fade bottom>
-            <div className="w-100 container">
-              <h2 style={{ color: '#007BFF' }} className="fw-bold text-center">
+            <div className='w-100 container'>
+              <h2 style={{ color: '#007BFF' }} className='fw-bold text-center'>
                 Blog Yazıları
               </h2>
-              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+              <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4'>
                 {data.map((item, index) => {
                   const { title, publishedAt, mainImage, excerpt, slug } = item;
                   return (
@@ -377,7 +377,7 @@ export default function Home({ data }) {
 }
 
 export async function getServerSideProps() {
-  const data = await sanityClient.fetch(
+  const data = await getClient().fetch(
     `*[_type == "post"]{
     title,
     slug,

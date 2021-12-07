@@ -15,6 +15,7 @@
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "next": "^11.0.0",
+    "next-sanity": "^0.4.0",
     "next-sanity-image": "^3.1.7",
     "nextjs-cors": "^2.0.0",
     "nodemailer": "^6.7.0",

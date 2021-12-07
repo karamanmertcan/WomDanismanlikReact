@@ -25,6 +25,5 @@ export default function (req, res) {
     else console.log(info);
   });
 
-  console.log(req.body);
   res.send('success');
 }

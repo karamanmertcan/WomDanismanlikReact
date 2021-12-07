@@ -1,9 +1,4 @@
-# *
 User-agent: *
-Allow: /
+Disallow:
 
-# Host
-Host: https://www.womdanismanlik.com
-
-# Sitemaps
-Sitemap: https://www.womdanismanlik.com/sitemap.xml
+Sitemap: https://www.womdanismanlik.com.com/sitemap.xml
