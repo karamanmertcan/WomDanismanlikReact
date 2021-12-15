@@ -11,9 +11,6 @@ const config = {
 const Form = () => {
   const { register, handleSubmit, setValue } = useForm();
 
-  const notify = () =>
-    toast('Mesajınız Gönderildi! En kısa sürede ekibimiz tarafından dönüş yapılacaktır .!');
-
   const onSubmit = (data) => {
     let info = {
       name: data.name,

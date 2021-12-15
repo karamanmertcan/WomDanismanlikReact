@@ -4,6 +4,13 @@ import Image from 'next/image';
 import { TiTick } from 'react-icons/ti';
 import Particles from 'react-tsparticles';
 import Fade from 'react-reveal/Fade';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination, Navigation } from 'swiper';
+import SwiperCarousel from '../components/SwiperCarousel';
 import { getClient } from '../client.js';
 import Accordion from '../components/Accordion';
 import BlogCard from '../components/BlogCard';
@@ -13,7 +20,9 @@ import Price from '../components/Price';
 import { Services } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import Why from '../components/Why';
-import References from '../components/References.js';
+
+// install Swiper modules
+SwiperCore.use([Pagination, Navigation]);
 
 export default function Home({ data }) {
   const particlesInit = (main) => {
@@ -258,7 +267,15 @@ export default function Home({ data }) {
           <div className='w-100 h-100 '>
             <div className='d-flex flex-column justify-content-center align-items-center'>
               <h3 className='text-primary fw-bold'>Referanslarımız</h3>
-              <References />
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  height: '300px',
+                  width: '100%'
+                }}>
+                <SwiperCarousel />
+              </div>
             </div>
           </div>
         </section>

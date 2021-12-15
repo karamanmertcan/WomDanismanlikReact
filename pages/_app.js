@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useContext } from 'react';
 import { UserProvider } from '../context';
 import '../globals.css';
+import 'swiper/css/bundle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const MyApp = ({ pageProps, Component }) => {
