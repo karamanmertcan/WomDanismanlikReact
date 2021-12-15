@@ -20,6 +20,7 @@ import Price from '../components/Price';
 import { Services } from '../components/Services';
 import { Testimonials } from '../components/Testimonials';
 import Why from '../components/Why';
+import SocialMediaSwiper from '../components/SocialMediaSwiper';
 
 // install Swiper modules
 SwiperCore.use([Pagination, Navigation]);
@@ -275,6 +276,23 @@ export default function Home({ data }) {
                   width: '100%'
                 }}>
                 <SwiperCarousel />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className='container mt-5 pt-5' style={{ height: 'auto' }}>
+          <div className='w-100 h-100 '>
+            <div className='d-flex flex-column justify-content-center align-items-center'>
+              <h3 className='text-primary fw-bold'>Sosyal Medya Referanslarımız</h3>
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  height: '300px',
+                  width: '100%'
+                }}>
+                <SocialMediaSwiper />
               </div>
             </div>
           </div>

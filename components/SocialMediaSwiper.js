@@ -15,37 +15,27 @@ SwiperCore.use([Pagination, Autoplay]);
 const logo = [
   {
     id: 1,
-    image: '/images/letwom.png',
-    link: 'https://www.letwom.com/'
+    image: '/images/uefrope.webp',
+    link: 'https://www.etsy.com/shop/UEFROPE?ref=simple-shop-header-name&listing_id=1079116295'
   },
   {
     id: 2,
     image: '/images/plania.png',
-    link: 'https://plania.co/'
+    link: 'https://www.etsy.com/shop/PlaniaDesign?ref=seller-platform-mcnav'
   },
   {
     id: 3,
-    image: '/images/viskobet.png',
-    link: 'https://www.viskobet.com/'
+    image: '/images/myjewelryorganizer.webp',
+    link: 'https://www.etsy.com/shop/MyJewelryOrganizer?ref=simple-shop-header-name&listing_id=1007800267'
   },
   {
     id: 4,
-    image: '/images/saksivecicek.png',
-    link: 'https://saksivecicek.com/'
-  },
-  {
-    id: 5,
-    image: '/images/minyaturtuglalogo.png',
-    link: 'https://www.minyaturtugla.com/'
-  },
-  {
-    id: 6,
-    image: '/images/metdekorasyon.png',
-    link: 'https://www.metdekorasyon.com/'
+    image: '/images/giftforeveryone.webp',
+    link: 'https://www.etsy.com/shop/GiftforEveryoneTR?ref=simple-shop-header-name&listing_id=1072256721'
   }
 ];
 
-export default function SwiperCarousel() {
+export default function SocialMediaSwiper() {
   return (
     <>
       <Swiper
@@ -67,7 +57,7 @@ export default function SwiperCarousel() {
                 <img
                   src={item.image}
                   alt=''
-                  style={{ objectFit: 'contain', width: '100%', height: '100px' }}
+                  style={{ objectFit: 'contain', width: '100%', height: '200px' }}
                 />
               </a>
             </Link>
