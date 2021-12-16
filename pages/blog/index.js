@@ -38,7 +38,7 @@ const Posts = ({ data }) => {
   );
 };
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await getClient().fetch(
     `*[_type == "post"]{
       title,
@@ -58,8 +58,7 @@ export async function getStaticProps() {
   return {
     props: {
       data
-    },
-    revalidate: 1
+    }
   };
 }
 

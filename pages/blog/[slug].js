@@ -75,26 +75,39 @@ const query = `*[_type == "post" && slug.current == $slug][0] {
 }
 `;
 
-export async function getStaticProps({ params, preview = false }) {
+// export async function getStaticProps({ params, preview = false }) {
+//   const currentPost = await getClient(preview).fetch(query, {
+//     slug: params.slug
+//   });
+
+//   return {
+//     props: {
+//       currentPost
+//     }
+//   };
+// }
+
+// export const getStaticPaths = async () => {
+//   const pages = await getClient().fetch(
+//     groq`*[_type == "post" && defined(slug.current)][].slug.current`
+//   );
+
+//   return {
+//     paths: pages.map((slug) => `/blog/${slug}`),
+//     fallback: true
+//   };
+// };
+
+export const getServerSideProps = async (context, preview = false) => {
+  // you also have access to the param postId from the context
   const currentPost = await getClient(preview).fetch(query, {
-    slug: params.slug
+    slug: context.params.slug
   });
 
   return {
     props: {
       currentPost
     }
-  };
-}
-
-export const getStaticPaths = async () => {
-  const pages = await getClient().fetch(
-    groq`*[_type == "post" && defined(slug.current)][].slug.current`
-  );
-
-  return {
-    paths: pages.map((slug) => `/blog/${slug}`),
-    fallback: true
   };
 };
 export default PostPage;
