@@ -15,17 +15,32 @@ SwiperCore.use([Pagination, Autoplay]);
 const logo = [
   {
     id: 1,
-    image: '/images/kaantasarım.webp',
-    link: 'https://www.instagram.com/kaantasarim/?hl=en'
+    image: '/images/uefrope.webp',
+    link: 'https://www.etsy.com/shop/UEFROPE?ref=simple-shop-header-name&listing_id=1079116295'
+  },
+  {
+    id: 2,
+    image: '/images/plania.png',
+    link: 'https://www.etsy.com/shop/PlaniaDesign?ref=seller-platform-mcnav'
+  },
+  {
+    id: 3,
+    image: '/images/myjewelryorganizer.webp',
+    link: 'https://www.etsy.com/shop/MyJewelryOrganizer?ref=simple-shop-header-name&listing_id=1007800267'
+  },
+  {
+    id: 4,
+    image: '/images/giftforeveryone.webp',
+    link: 'https://www.etsy.com/shop/GiftforEveryoneTR?ref=simple-shop-header-name&listing_id=1072256721'
   }
 ];
 
-export default function SocialMediaSwiper() {
+export default function EtsySwiper() {
   return (
     <>
       <Swiper
         slidesPerView={3}
-        centeredSlides={true}
+        centeredSlides={false}
         spaceBetween={30}
         autoplay={{
           delay: 2500,
