@@ -10,14 +10,9 @@ const comments = [
     img: `/images/buket.jpeg`,
     customer: 'Buket Çalışkan Çevik'
   },
+
   {
     id: 2,
-    comment: ` “E-Ticaret'e girerken aklımda olan tüm sorunları WOM Danışmanlık sayesinde çözüme kavuşturdum..” `,
-    img: `/images/huseyin.jpeg`,
-    customer: 'Hüseyin Şenoğlu'
-  },
-  {
-    id: 3,
     comment: ` “ Türkiye'de satışlarım iyi gidiyordu ancak yurt dışında satış yapmak istedim WOM Danışmanlık sayesinde Etsy ile tanıştım. ” `,
     img: `/images/person_3.jpg`,
     customer: 'MyJeweleryOrganizer'
@@ -40,7 +35,7 @@ export const Testimonials = () => {
         {comments.map((item) => (
           <div
             key={item.id}
-            className="p-5 text-center mt-5  d-flex flex-column justify-content-center align-items-center w-100 ">
+            className='p-5 text-center mt-5  d-flex flex-column justify-content-center align-items-center w-100 '>
             <p
               style={{
                 fontSize: '1.5rem',
@@ -50,20 +45,20 @@ export const Testimonials = () => {
                 color: 'gray',
                 fontStyle: 'italic'
               }}
-              className="text-center w-75">
+              className='text-center w-75'>
               {' '}
               {item.comment}{' '}
             </p>
-            <div className="d-flex justify-content-between ">
+            <div className='d-flex justify-content-between '>
               <Image
                 src={item.img}
-                className="rounded-circle"
+                className='rounded-circle'
                 height={61}
                 width={61}
                 priority={true}
               />
-              <div className="d-flex justify-content-center align-items-center">
-                <p className=" m-2">{item.customer}</p>
+              <div className='d-flex justify-content-center align-items-center'>
+                <p className=' m-2'>{item.customer}</p>
               </div>
             </div>
           </div>
