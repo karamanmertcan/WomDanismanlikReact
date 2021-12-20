@@ -6,19 +6,19 @@ export default function BlogCard({ title, publishedAt, mainImage, excerpt, slug 
 
   return (
     <div>
-      <div className="col h-100 ">
+      <div className='col h-100 '>
         <div
-          className="card h-100"
+          className='card h-100'
           onClick={() => router.push(`/blog/${slug.current}`)}
           style={{ cursor: 'pointer', height: 'auto' }}>
-          <img src={mainImage.asset.url} width={100} height={250} className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">{title}</h5>
-            <p className="card-text">{`${excerpt.slice(0, 100)}...`}</p>
+          <img src={mainImage.asset.url} width={100} height={250} className='card-img-top' />
+          <div className='card-body'>
+            <h5 className='card-title'>{title}</h5>
+            <p className='card-text'>{`${excerpt?.slice(0, 100)}...`}</p>
           </div>
-          <div className="card-footer d-flex justify-content-between">
-            <div className="author">WOM Danışmanlık</div>
-            <div className="date">{publishedAt}</div>
+          <div className='card-footer d-flex justify-content-between'>
+            <div className='author'>WOM Danışmanlık</div>
+            <div className='date'>{publishedAt}</div>
           </div>
         </div>
       </div>
